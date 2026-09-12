@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="架空のレストランの予約フォーム。" />
+    <title>予約フォーム | 架空のレストラン</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="reservation-page">
+    <header class="site-header reservation-header">
+      <a class="brand" href="index.html" aria-label="架空のレストラン ホーム">
+        <span class="brand-mark">L</span>
+        <span><strong>架空のレストラン</strong><small>LOCAL TABLE</small></span>
+      </a>
+      <a class="back-link" href="index.html">← ホームへ戻る</a>
+    </header>
+
+    <main class="reservation-main">
+      <div class="reservation-intro">
+        <div class="section-kicker"><span>RESERVATION</span><i></i><span>COME &amp; SAY HELLO</span></div>
+        <h1>おいしい時間を<br /><em>予約する。</em></h1>
+        <p>必要事項をご入力ください。内容を確認のうえ、担当者よりご連絡します。</p>
+      </div>
+
+      <form class="reservation-form" action="https://formsubmit.co/akinori590218@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="架空のレストラン｜予約のお問い合わせ" />
+        <input type="hidden" name="_next" value="https://sparkling-belekoy-a57454.netlify.app/reservation-thanks.html" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" />
+
+        <div class="form-row">
+          <label>お名前 <span>必須</span><input type="text" name="お名前" autocomplete="name" placeholder="山田 花子" required /></label>
+          <label>メールアドレス <span>必須</span><input type="email" name="メールアドレス" autocomplete="email" placeholder="example@email.com" required /></label>
+        </div>
+        <div class="form-row">
+          <label>電話番号 <span>必須</span><input type="tel" name="電話番号" autocomplete="tel" placeholder="000-0000-0000" required /></label>
+          <label>ご来店人数 <span>必須</span><select name="ご来店人数" required><option value="">選択してください</option><option>1名</option><option>2名</option><option>3名</option><option>4名</option><option>5名</option><option>6名以上</option></select></label>
+        </div>
+        <div class="form-row">
+          <label>ご希望日 <span>必須</span><input type="date" name="ご希望日" required /></label>
+          <label>ご希望時間 <span>必須</span><select name="ご希望時間" required><option value="">選択してください</option><option>11:00</option><option>12:00</option><option>13:00</option><option>17:30</option><option>18:30</option><option>19:30</option><option>20:00</option></select></label>
+        </div>
+        <label>ご要望・アレルギーなど<textarea name="ご要望・アレルギーなど" rows="5" placeholder="お席の希望やアレルギーなどがあればご記入ください。"></textarea></label>
+        <p class="form-note">送信後、入力いただいたメールアドレスへ確認のご連絡をする場合があります。</p>
+        <button class="button button-dark form-submit" type="submit">予約内容を送信する <span>↗</span></button>
+      </form>
+    </main>
+
+    <footer class="site-footer reservation-footer">
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span><strong>架空のレストラン</strong><small>LOCAL TABLE</small></span></a>
+      <p>季節を味わう、架空の食卓。</p>
+      <div class="footer-bottom"><span>© 2026 KAKU NO RESTAURANT</span><span>THIS IS A SAMPLE WEBSITE</span></div>
+    </footer>
+  </body>
+</html>
